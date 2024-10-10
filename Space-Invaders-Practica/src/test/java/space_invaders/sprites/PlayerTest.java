@@ -2,6 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import space_invaders.sprites.Player;
+import java.awt.event.KeyEvent;
 
 class PlayerTest {
     
