@@ -6,16 +6,22 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SpriteTest {
 
     @Test
-    void isVisible_shouldBeTrueAfterInitialization() {
+    void testDie() {
+        Sprite sprite = new Sprite();
+        sprite.die();
+        assertFalse(sprite.isVisible());
+    }
+
+    @Test
+    void testIsVisible() {
         Sprite sprite = new Sprite();
         assertTrue(sprite.isVisible());
     }
 
     @Test
-    void die_shouldMakeSpriteInvisible() {
+    void testIsDying() {
         Sprite sprite = new Sprite();
-        sprite.die();
-        assertFalse(sprite.isVisible());
+        assertFalse(sprite.isDying());
     }
 
 }
