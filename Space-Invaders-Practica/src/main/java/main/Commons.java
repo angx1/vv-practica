@@ -20,5 +20,6 @@ public interface Commons {
     int CHANCE = 5;
     int DELAY = 17;
     int PLAYER_WIDTH = 15;
+    
     int PLAYER_HEIGHT = 10;
 }
