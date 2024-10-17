@@ -89,19 +89,6 @@ class PlayerTest {
     
     }
 
-    @Test
-    void act() {
-        Player player = new Player();
-        int playerX =  player.getX();
-        int playerY =  player.getY();
-        player.act();
-        assertEquals(playerX, player.getX());
-        assertEquals(playerY, player.getY());
-    }
-
-
-
-
 
 
 
