@@ -439,4 +439,72 @@ public class Board extends JPanel {
             }
         }
     }
+
+    public Dimension getD() {
+        return d;
+    }
+
+    public void setD(Dimension d) {
+        this.d = d;
+    }
+
+    public void setAliens(List<Alien> aliens) {
+        this.aliens = aliens;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
+    public void setShot(Shot shot) {
+        this.shot = shot;
+    }
+
+    public int getDirection() {
+        return direction;
+    }
+
+    public void setDirection(int direction) {
+        this.direction = direction;
+    }
+
+    public int getDeaths() {
+        return deaths;
+    }
+
+    public void setDeaths(int deaths) {
+        this.deaths = deaths;
+    }
+
+    public boolean isInGame() {
+        return inGame;
+    }
+
+    public void setInGame(boolean inGame) {
+        this.inGame = inGame;
+    }
+
+    public String getExplImg() {
+        return explImg;
+    }
+
+    public void setExplImg(String explImg) {
+        this.explImg = explImg;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Timer getTimer() {
+        return timer;
+    }
+
+    public void setTimer(Timer timer) {
+        this.timer = timer;
+    }
 }
