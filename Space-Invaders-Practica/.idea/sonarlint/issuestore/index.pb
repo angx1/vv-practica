@@ -11,3 +11,5 @@ O
 src/main/java/main/Commons.java,e\e\ee2ddd63112f684b8aebb1ac71233649d5b00d69
 `
 0src/main/java/space_invaders/sprites/Sprite.java,a\1\a16409da90b30ded6b4a7ac502768b112ec584fc
+>
+doc/index.html,5\4\54b5e214b447551b0e0c8c11a04a296ef88222e4
