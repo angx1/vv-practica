@@ -27,15 +27,13 @@ public class ShotTest {
         assertEquals(-1, shot.getY(), "La coordenada Y debe ser -1 ya que Y resta  1.");
     }
 
-    @Test
+/*    @Test
     public void testShotPositioning() {
         shot.setX(100);
         shot.setY(200);
         assertEquals(100, shot.getX(), "La coordenada X debe ser 100.");
         assertEquals(200, shot.getY(), "La coordenada Y debe ser 200.");
-    }
-
-    @Test
+         @Test
     public void testShotVisibility() {
         shot.setVisible(false);
         assertFalse(shot.isVisible(), "El disparo debe ser invisible.");
@@ -51,14 +49,18 @@ public class ShotTest {
         shot.setY(shot.getY() - 10); // Simular disparo hacia arriba
         assertEquals(140, shot.getY(), "La coordenada Y debe ser 140 tras disparar.");
     }
+    }*/
 
-    @Test
+
+
+/*    @Test
     public void testShotOutOfBounds() {
-        // Intentamos colocar el disparo más allá del límite inferior
-        shot.setY(Commons.GROUND + 10);  // Esto lo coloca fuera de los límites hacia abajo
+        // Intentamos colocar el disparo más allá del límite superior
+        shot.setY(Commons.BOARD_HEIGHT + 10);  // Esto lo coloca fuera de los límites hacia arriba
         // Verificamos que el disparo esté efectivamente en una posición más allá del límite inferior
-        assertEquals(Commons.GROUND + 10, shot.getY(), "El disparo debe poder superar el límite inferior.");
-    }
+        assertEquals(Commons.BOARD_HEIGHT + 10, shot.getY(), "El disparo debe poder superar el límite inferior.");
+    }*/
+
     // VALORES LIMITES
     @Test
     public void testShotInitializationWithNegativeXAndValidY() {

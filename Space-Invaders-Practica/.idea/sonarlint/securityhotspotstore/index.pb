@@ -13,3 +13,7 @@ O
 0src/main/java/space_invaders/sprites/Sprite.java,a\1\a16409da90b30ded6b4a7ac502768b112ec584fc
 >
 doc/index.html,5\4\54b5e214b447551b0e0c8c11a04a296ef88222e4
+_
+/src/main/java/space_invaders/sprites/Alien.java,5\e\5e3535e831596cc98b17ee194873f36f8429c1d1
+`
+0src/main/java/space_invaders/sprites/Player.java,2\3\2316844f59970f7acf6b4757149b6f4561b2fb67
