@@ -17,3 +17,9 @@ _
 /src/main/java/space_invaders/sprites/Alien.java,5\e\5e3535e831596cc98b17ee194873f36f8429c1d1
 `
 0src/main/java/space_invaders/sprites/Player.java,2\3\2316844f59970f7acf6b4757149b6f4561b2fb67
+g
+7src/test/java/space_invaders/sprites/BoardTest_WhiteBox,9\6\963fae2a6af99fd1cd44f2ed84b96b68d9f689e4
+f
+6src/test/java/space_invaders/sprites/ShotTest_WhiteBox,3\d\3d1bddf2cb7cc551af515a122c9aeb8716046b34
+k
+;src/test/java/space_invaders/sprites/ShotTest_WhiteBox.java,8\e\8e76040bb862ffbe4f7e35f34a1d80837b15da09

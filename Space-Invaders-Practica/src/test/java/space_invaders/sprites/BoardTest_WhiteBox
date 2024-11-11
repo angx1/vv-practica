@@ -1,0 +1,158 @@
+
+
+CAJA BLANCA DE GAMEINIT
+
+
+    private void gameInit() {
+
+ (1)    this.aliens = new ArrayList<>();
+
+ (2)    for (int i = 0; i < 4; i++) {
+ (3)        for (int j = 0; j < 6; j++) {
+
+ (4)            var alien = new Alien(Commons.ALIEN_INIT_Y + 18 * j,
+  .                     Commons.ALIEN_INIT_Y + 18 * i);
+  .             this.aliens.add(alien);
+            }
+        }
+
+  (5)    this.player = new Player();
+   .     this.shot = new Shot();
+    }
+
+        1. Grafo:
+
+             (I)
+              |
+              v
+             (1)
+              |
+              v    false
+           ->(2)---------->(5)---->(F)
+          |   |
+     fale |   |  true
+          |   v
+           <-(3)< -
+              |   |
+         true |
+              v   |
+             (4) ->
+
+        2. Complejidad Ciclomática
+        . El número de regiones del grafo es igual a la complejidad
+          ciclomática = 3
+
+        . V(G) = A – N + 2 => 8 – 7 + 2 = 3
+          Donde A es el número de aristas y N es el número de nodos
+          contenidos en el grafoV
+
+        • V(G) = P + 1 => 2 + 1 = 3
+          Donde P es el número de nodos predicado contenidos en el grafo.
+
+        La complejidad ciclomática de gameInit() es 3, lo cual indica que solo hay 3 camino posible
+        en el método.
+
+        3.  Conjunto de caminos independientes
+        Dado que la complejidad ciclomática es 3 en initShot:
+
+        Caminos:
+        1) I → 1 → 2 → [3 → 4 → 3 → 2] → 5 → F
+        2) I → 1 → 2 → 5 → F
+        3) I → 1 → 2 → [3 → 2]→ 5 → F
+
+
+CAJA BLANCA DE UPDATE
+
+private void update() {
+
+        if (deaths == Commons.CHANCE) {
+            inGame = false;
+            timer.stop();
+            message = "Game won!";
+        }
+
+        this.player.act();
+        update_shots();
+        update_aliens();
+        update_bomb();
+    }
+
+
+
+
+
+private void update_shots() {
+        if (this.shot.isVisible()) {
+
+            int shotX = this.shot.getX();
+            int shotY = this.shot.getY();
+
+            for (Alien alien : this.aliens) {
+
+                int alienX = alien.getX();
+                int alienY = alien.getY();
+
+                if (alien.isVisible() && this.shot.isVisible()) {
+                    if (shotX >= (alienX)
+                            && shotX <= (alienX + Commons.ALIEN_WIDTH)
+                            && shotY >= (alienY)
+                            && shotY <= (alienY + Commons.ALIEN_HEIGHT)) {
+
+                        var ii = new ImageIcon(explImg);
+                        alien.setImage(ii.getImage());
+                        alien.setDying(true);
+                        deaths--;
+                        this.shot.die();
+                    }
+                }
+            }
+
+            int y = this.shot.getY();
+            y -= 4;
+
+            if (y < 0) {
+                this.shot.die();
+            } else {
+                this.shot.setY(y);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

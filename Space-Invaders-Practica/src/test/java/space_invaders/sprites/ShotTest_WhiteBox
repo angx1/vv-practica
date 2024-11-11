@@ -1,0 +1,48 @@
+
+    Para las pruebas de caja blanca referentes a la clase Shot, el único método que se prueba es Shot(),
+    que a su vez lo único que hace es llamar al metodo initShot.
+
+    Este método tiene una lógica sencilla: asigna una imagen al disparo y ajusta sus coordenadas x e y de acuerdo
+    con valores constantes (H_SPACE y V_SPACE).
+
+    public Shot(int x, int y) {
+        initShot(x, y);
+    }
+
+        private void initShot(int x, int y) {
+
+    1)      var shotImg = "src/main/resources/images/shot.png";
+    2)      var ii = new ImageIcon(shotImg);
+    3)      setImage(ii.getImage());
+
+    4)      int H_SPACE = 6;
+    5)      setX(x + H_SPACE);
+
+    6)      int V_SPACE = 1;
+    7)      setY(y - V_SPACE);
+        }
+
+    1. Grafo:
+    (I) → (1,2) → (3) → (4,5) → (6,7) → (F)
+
+    2. Complejidad Ciclomática
+    . El número de regiones del grafo es igual a la complejidad
+      ciclomática = 1
+
+    . V(G) = A – N + 2 => 5 – 6 + 2 = 1
+      Donde A es el número de aristas y N es el número de nodos
+      contenidos en el grafoV
+
+    • V(G) = P + 1 => 0 + 1 = 1
+      Donde P es el número de nodos predicado contenidos en el grafo.
+
+    La complejidad ciclomática de initShot es 1, lo cual indica que solo hay un camino posible
+    en el método (es una estructura secuencial sin bifurcaciones)
+
+    3.  Conjunto de caminos independientes
+    Dado que la complejidad ciclomática es 1, solo hay un camino independiente en initShot:
+
+    Camino único: (I → 1,2 → 3 → 4,5 → 6,7 → F)
+
+
+
