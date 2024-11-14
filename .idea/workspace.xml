@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="108eaf15-3b57-41a6-a72f-64a8842f0d95" name="Changes" comment="" />
+    <list default="true" id="108eaf15-3b57-41a6-a72f-64a8842f0d95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Space-Invaders-Practica/src/test/java/space_invaders/sprites/BoardTest_WhiteBox" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Space-Invaders-Practica/src/test/java/space_invaders/sprites/ShotTest_WhiteBox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76ed870303510d3a73912c0a35d93ab74ab7a16d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76ed870303510d3a73912c0a35d93ab74ab7a16d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/FX517/OneDrive - Universidad Politécnica de Madrid/Escritorio/UNI_24-25/VV(IWM42)/PRACTICA/Git/vv-practica/Space-Invaders-Practica/pom.xml",
+    "last_opened_file_path": "C:/Users/FX517/OneDrive - Universidad Politécnica de Madrid/Escritorio/UNI_24-25/VV(IWM42)/PRACTICA/Git_main/vv-practica/Space-Invaders-Practica",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +66,7 @@
       <workItem from="1728557388269" duration="133000" />
       <workItem from="1729013767150" duration="3936000" />
       <workItem from="1729017916401" duration="45000" />
+      <workItem from="1731143829689" duration="20000" />
     </task>
     <servers />
   </component>

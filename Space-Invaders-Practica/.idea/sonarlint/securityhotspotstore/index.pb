@@ -23,3 +23,5 @@ f
 6src/test/java/space_invaders/sprites/ShotTest_WhiteBox,3\d\3d1bddf2cb7cc551af515a122c9aeb8716046b34
 k
 ;src/test/java/space_invaders/sprites/ShotTest_WhiteBox.java,8\e\8e76040bb862ffbe4f7e35f34a1d80837b15da09
+w
+Gsrc/test/java/space_invaders/sprites/resultados/BoardTest_WhiteBox.java,9\5\9556b064932f355814aba38fd55d36f5643e7c0f

@@ -12,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ShotTest {
 
     private Shot shot;
-
     @BeforeEach
     public void setUp() {
         // Inicializa el disparo en una posición inicial
@@ -115,46 +114,46 @@ public class ShotTest {
 
     @Test
     public void testShotInitializationWithXAboveMinAndZeroY() {
-        Shot shot = new Shot(175, -1);
-        assertEquals(181, shot.getX(), "(C8) La coordenada X debería ser 175.");
+        Shot shot = new Shot(179, -1);
+        assertEquals(185, shot.getX(), "(C8) La coordenada X debería ser 185.");
         assertEquals(-2, shot.getY(), "(C8) La coordenada Y debería ser -2.");
     }
 
 
     @Test
     public void testShotInitializationWithMaxXAndMaxY() {
-        Shot shot = new Shot(175, 0);
-        assertEquals(181, shot.getX(), "(C9) La coordenada X debería ser 181.");
+        Shot shot = new Shot(179, 0);
+        assertEquals(185, shot.getX(), "(C9) La coordenada X debería ser 185.");
         assertEquals(-1, shot.getY(), "(C9) La coordenada Y debería ser -1.");
     }
 
 
     @Test
     public void testShotInitializationWithXAboveMaxAndYAboveMax() {
-        Shot shot = new Shot(175, 1);
-        assertEquals(181, shot.getX(), "(C10) La coordenada X debería ser el valor 181.");
+        Shot shot = new Shot(179, 1);
+        assertEquals(185, shot.getX(), "(C10) La coordenada X debería ser el valor 185.");
         assertEquals(0, shot.getY(), "(C10) La coordenada Y debería ser el valor 0.");
     }
 
     @Test
     public void testShotInitializationWithXAboveMaxAndMaxY() {
-        Shot shot = new Shot(175, Commons.BOARD_HEIGHT -1);
-        assertEquals(181, shot.getX(), "(C11) La coordenada X debería ser el valor 181.");
+        Shot shot = new Shot(179, Commons.BOARD_HEIGHT -1);
+        assertEquals(185, shot.getX(), "(C11) La coordenada X debería ser el valor 185.");
         assertEquals(348 , shot.getY(), "(C11) La coordenada Y debería ser 348.");
     }
 
     @Test
     public void testShotInitializationWithMaxXAndYAboveMax() {
-        Shot shot = new Shot(175, Commons.BOARD_HEIGHT);
-        assertEquals(181, shot.getX(), "(C12) La coordenada X debería ser 181.");
+        Shot shot = new Shot(179, Commons.BOARD_HEIGHT);
+        assertEquals(185, shot.getX(), "(C12) La coordenada X debería ser 185.");
         assertEquals(349, shot.getY(), "(C12)La coordenada Y debería ser el valor 349.");
     }
 
 
     @Test
     public void testShotInitializationWithMaxXAndY() {
-        Shot shot = new Shot(175, Commons.BOARD_HEIGHT + 1);
-        assertEquals(181, shot.getX(), "(C13) La coordenada X debería ser 181.");
+        Shot shot = new Shot(179, Commons.BOARD_HEIGHT + 1);
+        assertEquals(185, shot.getX(), "(C13) La coordenada X debería ser 185.");
         assertEquals(350, shot.getY(), "(C13) La coordenada Y debería ser el valor max 350.");
     }
 
