@@ -34,7 +34,7 @@ public class ShotTest {
         "179, -1, 185, -2",  // Caso límite negativo Y
         "179, 0, 185, -1",   // Caso límite cero Y
         "179, 1, 185, 0",    // Caso válido Y
-        "179, " + Commons.BOARD_HEIGHT, 185, 349",  // Caso límite máximo Y
+        "179, " + Commons.BOARD_HEIGHT + ", 185, 349",  // Caso límite máximo Y
         "179, " + (Commons.BOARD_HEIGHT - 1) + ", 185, 348",  // Caso sobre límite Y
         "179, " + (Commons.BOARD_HEIGHT + 1) + ", 185, 350"  // Caso sobre límite Y
     })
