@@ -6,65 +6,54 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AlienTest {
 
+    //initAlien
     @ParameterizedTest
     @CsvSource({
-        "-1, 175, 0",    // xMinMinus
-        "0, 175, 0",     // xMin
-        "1, 175, 1",     // xMinPlus
-        "357, 175, 357", // xMaxMinus
-        "358, 175, 358", // xMax
-        "359, 175, 358"  // xMaxPlus
+        "-1, 175, 0, 175",      //1
+        "0, 175, 0, 175",       //2
+        "1, 175, 1, 175",       //3
+        "357, 175, 357, 175",   //4
+        "358, 175, 358, 175",   //5
+        "359, 175, 358, 175",   //6
+
+        "179, -1, 179, 0",      //7
+        "179, 0, 179, 0",       //8
+        "179, 1, 179, 1",       //9
+        "179, 349, 179, 349",   //10
+        "179, 350, 179, 350",   //11
+        "179, 351, 179, 350"    //12
     })
-    void testInitAlienX(int inputX, int inputY, int expectedX) {
+    void testInitAlien(int inputX, int inputY, int expectedX, int expectedY) {
         Alien alien = new Alien(inputX, inputY);
         assertEquals(expectedX, alien.getX());
-    }
-
-    @ParameterizedTest
-    @CsvSource({
-        "179, -1, 0",    // yMinMinus
-        "179, 0, 0",     // yMin
-        "179, 1, 1",     // yMinPlus
-        "179, 349, 349", // yMaxMinus
-        "179, 350, 350", // yMax
-        "179, 351, 350"  // yMaxPlus
-    })
-    void testInitAlienY(int inputX, int inputY, int expectedY) {
-        Alien alien = new Alien(inputX, inputY);
         assertEquals(expectedY, alien.getY());
     }
 
     @ParameterizedTest
     @CsvSource({
-        "-1, 175, 0",    // xMinMinus
-        "0, 175, 0",     // xMin
-        "1, 175, 1",     // xMinPlus
-        "357, 175, 357", // xMaxMinus
-        "358, 175, 358", // xMax
-        "359, 175, 358"  // xMaxPlus
+        "-1, 175, 0, 175",      //1
+        "0, 175, 0, 175",       //2
+        "1, 175, 1, 175",       //3
+        "357, 175, 357, 175",   //4
+        "358, 175, 358, 175",   //5
+        "359, 175, 358, 175",   //6
+
+        "179, -1, 179, 0",      //7
+        "179, 0, 179, 0",       //8
+        "179, 1, 179, 1",       //9
+        "179, 349, 179, 349",   //10
+        "179, 350, 179, 350",   //11
+        "179, 351, 179, 350"    //12
     })
-    void testInitBombX(int inputX, int inputY, int expectedX) {
+    void testInitBomb(int inputX, int inputY, int expectedX, int expectedY) {
         Alien alien = new Alien(inputX, inputY);
         assertEquals(expectedX, alien.getBomb().getX());
-    }
-
-    @ParameterizedTest
-    @CsvSource({
-        "179, -1, 0",    // yMinMinus
-        "179, 0, 0",     // yMin
-        "179, 1, 1",     // yMinPlus
-        "179, 349, 349", // yMaxMinus
-        "179, 350, 350", // yMax
-        "179, 351, 350"  // yMaxPlus
-    })
-    void testInitBombY(int inputX, int inputY, int expectedY) {
-        Alien alien = new Alien(inputX, inputY);
         assertEquals(expectedY, alien.getBomb().getY());
     }
 
     @ParameterizedTest
     @CsvSource({
-        "179, 175, 179, 175"  // nominal case
+        "179, 175, 179, 175"  // nominal case (initAlien y initBomb CP 13)
     })
     void testInitAlienNominal(int inputX, int inputY, int expectedX, int expectedY) {
         Alien alien = new Alien(inputX, inputY);
