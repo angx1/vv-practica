@@ -69,7 +69,6 @@ class PlayerTest {
 
     @Test
     void testKeyPressLeft() {
-        
         Image initialImage = player.getImage();
         int initialImageX = initialImage.getWidth(null);
         
@@ -91,7 +90,6 @@ class PlayerTest {
     void testKeyPressRight() {
         KeyEvent rightPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
             System.currentTimeMillis(), 0, KeyEvent.VK_RIGHT, KeyEvent.CHAR_UNDEFINED);
-        
     
         player.keyPressed(rightPress);
         Image beforeMove = player.getImage();
@@ -104,17 +102,14 @@ class PlayerTest {
 
     @Test
     void testKeyRelease() {
-        
         KeyEvent rightPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
             System.currentTimeMillis(), 0, KeyEvent.VK_RIGHT, KeyEvent.CHAR_UNDEFINED);
         player.keyPressed(rightPress);
         player.act();
         
-        
         KeyEvent rightRelease = new KeyEvent(testPanel, KeyEvent.KEY_RELEASED,
             System.currentTimeMillis(), 0, KeyEvent.VK_RIGHT, KeyEvent.CHAR_UNDEFINED);
         player.keyReleased(rightRelease);
-        
         
         Image positionBeforeAct = player.getImage();
         player.act();
@@ -126,7 +121,6 @@ class PlayerTest {
 
     @Test
     void testInvalidKeys() {
-    
         KeyEvent invalidKey = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
             System.currentTimeMillis(), 0, KeyEvent.VK_A, KeyEvent.CHAR_UNDEFINED);
         
