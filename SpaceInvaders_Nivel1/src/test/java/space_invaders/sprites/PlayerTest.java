@@ -1,4 +1,4 @@
-package space_invaders.player;
+package space_invaders.sprites;
 
 
 import java.awt.Image;
@@ -14,7 +14,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import main.Commons;
-import space_invaders.sprites.Player;
 
 
 class PlayerTest {
