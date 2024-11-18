@@ -1,9 +1,10 @@
 package space_invaders.sprites;
 
-import main.Commons;
+import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
-import java.awt.event.KeyEvent;
+
+import main.Commons;
 
 public class Player extends Sprite {
 
@@ -91,5 +92,10 @@ public class Player extends Sprite {
 
             dx = 0;
         }
+    }
+
+
+    public int getWidth() {
+        return width;
     }
 }
