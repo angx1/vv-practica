@@ -24,9 +24,9 @@ class PlayerTest extends Player {
 
     @ParameterizedTest
     @CsvSource({
-            "2",      //1
-            "328",   //2
-            "0"         //4
+            "2",      
+            "328",   
+            "0"         
     })
     void testAct(int x) {
         player.setX(x);
