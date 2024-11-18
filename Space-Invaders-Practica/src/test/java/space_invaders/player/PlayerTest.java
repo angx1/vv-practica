@@ -11,16 +11,12 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import main.Commons;
 import space_invaders.sprites.Player;
 
 
-
-
-@DisplayName("Player Black Box Tests")
 class PlayerTest {
     
     private Player player;
@@ -33,9 +29,7 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should stop at right boundary")
     void testRightBoundary() {
-        
         KeyEvent rightPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED, 
             System.currentTimeMillis(), 0, KeyEvent.VK_RIGHT, KeyEvent.CHAR_UNDEFINED);
         
@@ -55,7 +49,6 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should stop at left boundary")
     void testLeftBoundary() {
         KeyEvent leftPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED, 
             System.currentTimeMillis(), 0, KeyEvent.VK_LEFT, KeyEvent.CHAR_UNDEFINED);
@@ -75,7 +68,6 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should respond to LEFT key press")
     void testKeyPressLeft() {
         
         Image initialImage = player.getImage();
@@ -96,7 +88,6 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should respond to RIGHT key press")
     void testKeyPressRight() {
         KeyEvent rightPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
             System.currentTimeMillis(), 0, KeyEvent.VK_RIGHT, KeyEvent.CHAR_UNDEFINED);
@@ -112,7 +103,6 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should stop moving when key is released")
     void testKeyRelease() {
         
         KeyEvent rightPress = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
@@ -135,7 +125,6 @@ class PlayerTest {
     }
 
     @Test
-    @DisplayName("Player should not respond to invalid keys")
     void testInvalidKeys() {
     
         KeyEvent invalidKey = new KeyEvent(testPanel, KeyEvent.KEY_PRESSED,
